@@ -1,24 +1,31 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Development
+.git
+.gitignore
+.next
+.cache
+*.md
+.env*
 
-# dependencies
-# **/node_modules
-.pnp
-.pnp.js
-.pnpm-store/
-
-# testing
-coverage
-
-# next.js
-**/.next
-**/out
-**/build
-
-# node
+# Dependencies
+**/node_modules
 **/dist
+**/build
+**/.turbo
 
-# misc
+# Testing
+coverage
+**/__tests__
+**/*.test.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS specific
 .DS_Store
+Thumbs.db
 *.pem
 
 # debug
